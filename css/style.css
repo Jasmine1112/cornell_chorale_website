@@ -1,0 +1,465 @@
+* {
+	margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+body {
+    font-family: 'Yantramanav', sans-serif;
+    height: 100%;
+}
+
+#navbar li a  {
+	display: block;
+	text-decoration: none;
+	color: #cecece;
+	padding: 8px;
+	text-align: center;
+}
+
+#navbar ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	width: 15%;
+	background-color: #8b0000;
+	position: fixed;
+	height: 100%;
+	overflow: auto;
+}
+
+#navbar li a:hover{
+	color: white;
+}
+
+#navbar li a:after{
+    content: '';
+    display: block;
+    margin: auto;
+    height: 1px;
+    width: 0px;
+    background: transparent;
+    transition: width .5s ease, background-color .5s ease;
+}
+
+#navbar li a:hover:after{
+    width: 50px;
+    background: white;
+}
+
+#navbar li a:active {
+    color: white;
+}
+
+.dropdown{
+	display: none;
+	text-align: right;
+}
+
+#logo img {
+    width: 80%;
+    padding-left: 10%;
+}
+
+#logo {
+	padding: 0px;
+}
+
+#homecontent {
+	margin-left: 15%;
+}
+
+.login_homecontent {
+    width: 85%;
+    margin-left: 0;
+    float: right;
+}
+
+.login_homecontent p{
+    margin-top: 3em;
+    margin-left: 4em;
+}
+
+.login_homecontent h2{
+    margin-top: 3em;
+    margin-left: 4em;
+}
+
+#banner.homeban, #banner.aboutban, #banner.syllabusban, #banner.contactban {
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+}
+
+#banner.homeban img{
+    height: 100%;
+}
+
+#banner.aboutban {
+    background-image: url("../img/lincoln.jpg");
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(32,26,22,.8);
+    z-index: 99;
+    height: 100vh;
+}
+
+.mySlides {
+    width: 100%;
+    object-fit: cover;
+}
+
+.homeban h2 {
+	position: absolute;
+	top: 45%;
+    z-index: 100;
+    color: white;
+    left: 8%;
+    font-size: 70px;
+    font-family: 'Lora', serif;
+    font-weight: 300;
+}
+
+#homecontent #text h3 {
+    padding-bottom: 20px;
+}
+
+#homecontent #text {
+	margin: 2%;
+}
+
+#gallerycontent {
+    margin-left: 15%;
+}
+
+#gallerycontent img {
+    height: 200px;
+}
+
+.galleryban h2 {
+    margin-left: 15%;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+#downarrow {
+    height: 80px;
+    position: absolute;
+    bottom: 20px;
+    left: 45%;
+}
+
+#about {
+    height: 80px;
+    position: absolute;
+    bottom: 45px;
+    left: 47%;
+    color: white;
+}
+
+#conductor {
+    height: 275px;
+    float: left;   
+    display: inline;
+    padding-right: 15px;
+    vertical-align: middle;
+}
+
+#text.abouttext {
+    margin: auto;
+    margin-left: 15%;
+    width: 78%;
+    text-align: justify;
+}
+
+.abouttext h1 {
+    padding-bottom: 20px;
+}
+
+.abouttext h2 {
+    padding-top: 20px;
+}
+
+#audition {
+    padding-top: 20px;
+}
+
+.abouttext h4 {
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+.abouttext #director {
+    padding-bottom: 10px;
+    display: inline-block;
+    margin-left: auto;
+}
+
+.abouttext #q1, #q2, #q3 {
+    font-weight: bold;
+    padding-top: 15px;
+}
+
+#banner.syllabusban {
+    background-image: url("../img/banner1.jpg");
+}
+
+#syllabus {
+    height: 80px;
+    position: absolute;
+    bottom: 45px;
+    left: 45.5%;
+    color: white;
+}
+
+#banner.contactban {
+    background-image: url("../img/contactbanner.jpg");
+}
+
+#contact {
+    height: 50px;
+    left: 44%;
+    color: white;
+}
+
+#contactform {
+    margin-top: 20%;
+    color: white;
+    background-color: rgba(32,26,22,.6);
+    box-shadow: 0px 0px 5px rgba(0,0,0,.6);
+    display: inline-block;
+    padding: 2%;
+}
+
+.contactform input, select, textarea{
+    color: white;
+}
+
+.contactform input[type=text] {
+    border: 1px solid white;
+    margin: 8px 0;
+    border-radius: 4px;
+    padding: 8px 20px;
+}
+
+.contactform input[type=email] {
+    border: 1px solid white;
+    border-radius: 4px;
+    padding: 8px 20px;
+}
+
+.contactform input[type=submit] {
+    border: 1px solid white;
+    border-radius: 4px;
+    padding: 3px;
+}
+
+.form {
+    margin-left: 15%;
+    padding: 10px;
+}
+
+#memberscontent {
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+#memberscontent img {
+    height: 200px;
+}
+
+.membersban h2 {
+    margin-left: 15%;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+#search_member ~ p, #galleryban ~ p {
+    margin-left: 15%;
+    color: #630d00;
+}
+
+.member_cell {
+    width: 30%;
+    text-align: center;
+    display: inline-block;
+    margin-top: 1.5em;
+}
+
+.form input[type=text] {
+    border: 1px solid black;
+    margin: 8px 0;
+    border-radius: 4px;
+    padding: 8px 20px;
+}
+
+.form input[type=email] {
+    border: 1px solid black;
+    border-radius: 4px;
+    padding: 8px 20px;
+}
+
+.form input[type=submit] {
+    border: 1px solid black;
+    border-radius: 4px;
+}
+
+.form input[type=password] {
+    border: 1px solid black;
+    border-radius: 4px;
+}
+
+.member_cell img:hover {
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.voice_part {
+    border-top-style: solid;
+    border-top-width: 2px;
+    margin-bottom: 2em;
+    border-color: #630d00;
+}
+
+.voice_part h3 {
+    margin-bottom: 2em;
+}
+
+.modal { /* Adapted from https://www.w3schools.com/howto/howto_css_modal_images.asp */
+    display: none;
+    position: fixed;
+    z-index: 10;
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.9); 
+    text-align: center;
+    overflow: auto;
+}
+
+.modal img{
+    margin-top: 3em;
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.modal .exit {
+    position: fixed;
+    top: 1em;
+    right: 2em;
+    text-decoration: none;
+    cursor: pointer;
+    color: #a3606b;
+}
+
+.modal form {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.modal_member_info {
+    color: #e5e7ea;
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    margin-bottom: 5em;
+}
+
+.modal_edit_member form, .modal_add_member form, .modal_delete_image form, 
+.modal_add_image form{
+    color: #e5e7ea;
+}
+
+.modal_add_member form, .modal_add_image form {
+    margin-top: 15%;
+}
+
+.modal_edit_member input[type=text], .modal_add_member input[type=text] {
+    border: 1px solid black;
+    background-color: #f7f2c8;
+    border-radius: 4px;
+}
+
+.button {
+    cursor: pointer;
+    text-decoration: underline;
+    padding: 0.05em;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    border-radius: 0.2em;
+    background: #4c0004;
+    color: #e5e7ea;
+}
+
+.hidden {
+    display: none;
+}
+
+.login {
+    display: inline-block;
+    text-align: center;
+}
+
+#navbar ul {
+    float: left;
+}
+
+.add_button_h2{
+    display: inline-block;
+}
+
+.add_button{
+    font-size: 1em;
+    border-radius: 1em;
+    border: 1px solid black;
+    font-weight: bold;
+    padding-left: 0.375em;
+    padding-right: 0.375em;
+    margin-left: 0.5em;
+    vertical-align: 4px;
+    cursor: pointer;
+}
+
+.delete_button{
+    vertical-align: top;
+    cursor: pointer;
+}
+
+#socialmedia img{
+    width: 20%;
+    display: inline-block;
+    padding: 4%;
+}
+
+#socialmedia {
+    text-align: center;
+    color: white;
+    padding-top: 90%;
+    display: inline-block;
+}
+
+#banner {
+    text-align: center;
+}
+
+#hometext {
+    text-shadow: 2px 2px 20px #000000;
+}
+}
+
